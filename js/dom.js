@@ -24,11 +24,11 @@ export const dom = {
         }
     },
 
-    createCustomEvents: function () {
+    createMyEvents: function () {
         const ids = document.querySelectorAll('[id]');
         Array.from(ids).forEach(el => {
             if (el.tagName === "DIV") {
-                this.customEvents[el.id + "Event"] = new CustomEvent(el.id + "Event");
+                this.myEvents[el.id + "Event"] = new Event(el.id + "Event");
             }
         })
     },
@@ -50,10 +50,10 @@ export const dom = {
         }
     },
 
-    customEvents: {},
-
     els: {},
     
+    myEvents: {},
+
     showDiv: function (divsToShow) {
         // divsToShow can be a string or an array of strings. These strings
         // should be the ids of divs to show. If it is a string this is
