@@ -1,5 +1,7 @@
 export const dom = {
 
+    changeDiv: new Event("changeDiv"),
+
     consoleLogEls: function() {
         console.log("***********");
         console.log("dom.els:");
@@ -24,6 +26,7 @@ export const dom = {
         }
     },
 
+    /*
     createMyEvents: function () {
         const ids = document.querySelectorAll('[id]');
         Array.from(ids).forEach(el => {
@@ -32,6 +35,7 @@ export const dom = {
             }
         })
     },
+    */
 
     createElVars: function () {
         const ids = document.querySelectorAll('[id]')

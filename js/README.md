@@ -18,15 +18,15 @@ The `dom` module automates these assignments, saving time.
 
 ```
 <div id="home_d"></div>
-home_d
+dom.els.home_d
 
 <div id="my-form_d"></div>
-myForm_d
+dom.els.myForm_d
 
 <div id="my-form_d">
     <button id="my-form_dOk_btn>OK</button>
 </div>
-myForm_dOk_btn
+dom.els.myForm_dOk_btn
 ```
 
 In the last example it may seem superfluous to include "`my-form`" in the id value for the button. For the HTML file that is true because it can be clearly seen that the button is inside the div with an id value of "`my-form_d`". In a JavaScript file this would not be evident and it becomes useful for the button's name to include the name of the div that it is inside. The JavaScript file can be worked on with less frequent inspections of the HTML file.
